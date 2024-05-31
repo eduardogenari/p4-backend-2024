@@ -20,5 +20,9 @@
   },
   "prisma": {
     "seed": "bun prisma/seed.ts"
+  },
+  "scripts": {
+    "dev": "bun --hot src/server.ts",
+    "start": "NODE_ENV=production bun src/server.ts"
   }
 }
