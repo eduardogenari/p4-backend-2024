@@ -12,14 +12,14 @@ datasource db {
 
 model Forum {
   forumId   Int       @id @default(autoincrement())
-  name      String    @unique
+  name      String    
   createdAt DateTime  @default(now())
   messages  Message[]
 }
 
 model User {
   userId    Int       @id @default(autoincrement())
-  nick      String    @unique
+  nick      String    
   fullName  String?
   createdAt DateTime  @default(now())
   admin     Boolean   @default(false)
