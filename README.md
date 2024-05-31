@@ -1,3 +1,62 @@
+# Instructions
+
+1. clone repository "p4-backend-2024" branch "main":
+
+```bash
+git clone -b main git@github.com:eduardogenari/p4-backend-2024.git
+```
+
+2. after cloning, navigate into the p4-backend-2024 directory, which contains the cloned repository:
+
+```bash
+cd p4-backend-2024
+```
+
+3. create a .env file in the root directory of the project and set environment variables PORT and DATABASE_URL within the .env file:
+
+```bash
+PORT=8888
+DATABASE_URL="file:../db/dev.db"
+```
+
+4. build docker container according to the configurations specified in the compose.yml file:
+
+```bash
+sudo docker compose build 
+```
+
+5. starts docker containers in detached mode:
+
+```bash
+sudo docker compose up -d
+```
+
+6. in visual studio code, in thunder client, import collection .src/resources/thunder-collection_p4-backend-2024.json and play with the api
+
+7. optional, check active docker image "p4-backend-2024-api":
+
+```bash
+sudo docker image list
+```
+
+8. optional, check active docker container "p4-backend-2024-api":
+
+```bash
+sudo docker ps
+```
+
+9. stop docker containers:
+
+```bash
+sudo docker compose down
+```
+
+10. alternatively, run prisma studio, a GUI tool for database management:
+
+```bash
+bunx prisma studio
+```
+
 # Backend en Typescript, Express y Prisma
 
 Se trata de hacer un _backend_ usando Typescript, Express y Prisma. El _backend_ implementado en clase es el modelo a seguir. Para alumnos que lo hacen por primera vez y sienten algo de incomodidad, lo ideal es usar el modelo de guía y hacer un _backend_ cercano al original de tal manera que la práctica sea un repaso a fondo. Para los que estén más cómodos, lo ideal es innovar en algun aspecto y salirse parcialmente del modelo en ciertos momentos o explorar algún interés personal. El modelo de datos es directamente la práctica anterior.

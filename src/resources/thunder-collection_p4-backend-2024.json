@@ -1,0 +1,86 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "p4-backend-2024",
+    "collectionId": "4bb0de09-1661-4212-ba5d-9c41f54a90ba",
+    "dateExported": "2024-05-31T17:29:19.055Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a5034cc5-1820-487e-b18a-8f9f03b133ac",
+            "colId": "4bb0de09-1661-4212-ba5d-9c41f54a90ba",
+            "containerId": "",
+            "name": "Get All forums",
+            "url": "/forums",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-03T11:20:03.959Z",
+            "modified": "2024-05-03T11:20:36.652Z",
+            "headers": []
+        },
+        {
+            "_id": "bac74e77-3f00-46ca-95a7-2111ba1f3d55",
+            "colId": "4bb0de09-1661-4212-ba5d-9c41f54a90ba",
+            "containerId": "",
+            "name": "Get One Forum",
+            "url": "/forums/4",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-03T11:20:03.960Z",
+            "modified": "2024-05-31T17:07:05.632Z",
+            "headers": []
+        },
+        {
+            "_id": "3f8d9b2b-d02e-49de-9127-5e3ef10ab632",
+            "colId": "4bb0de09-1661-4212-ba5d-9c41f54a90ba",
+            "containerId": "",
+            "name": "Add One Forum",
+            "url": "/forums",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-03T11:20:03.961Z",
+            "modified": "2024-05-03T11:21:05.517Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Another test\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0aa6eb02-0b61-45af-a173-70a4da41261e",
+            "colId": "4bb0de09-1661-4212-ba5d-9c41f54a90ba",
+            "containerId": "",
+            "name": "Update One Forum",
+            "url": "/forums/30",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-05-03T11:20:03.962Z",
+            "modified": "2024-05-03T11:20:03.962Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Full-Stack Questions\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "873eab5c-858f-4a20-986e-d0279f769e7b",
+            "colId": "4bb0de09-1661-4212-ba5d-9c41f54a90ba",
+            "containerId": "",
+            "name": "Delete One Forum",
+            "url": "/forums/30",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-05-03T11:20:03.963Z",
+            "modified": "2024-05-03T11:20:03.963Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:8888"
+        }
+    },
+    "ref": "7wW2913zfJXbe3jCryUeP-07l64DvFV8bNejjhUJaHCJFTE5PTh9pEKGxwJDyoCxJdq2XUHIA9nh_e1LxdJE4g"
+}
